@@ -721,7 +721,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section {
-  padding: 7em 0;
+  padding: 3em 0;
 }
 
 .probootstrap-section.probootstrap-border-top {
@@ -834,7 +834,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-footer {
-  padding: 3em 0;
+  padding: 1em 0;
   background: #303841;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -854,7 +854,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-footer .copyright {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 768px) {

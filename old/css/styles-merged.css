@@ -7125,7 +7125,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-footer {
-  padding: 7em 0;
+  padding: 1em 0;
   background: #303841;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -7145,7 +7145,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-footer .copyright {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -7166,7 +7166,7 @@ a:hover, a:focus, a:active {
 .probootstrap-footer .probootstrap-footer-widget {
   float: left;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .probootstrap-footer .probootstrap-footer-widget h3 {
@@ -7420,7 +7420,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-flex-section {
-  padding: 7em 0;
+  padding: 3em 0;
 }
 
 .probootstrap-flex-section.probootstrap-bg-white {
