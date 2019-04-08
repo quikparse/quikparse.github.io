@@ -78,20 +78,33 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
-            <h2>Fill out the form &amp; we'll get right back!</h2>
+            <h2>Fill out the following form to request a free quote</h2>
             <form accept-charset="UTF-8" action="https://usebasin.com/f/b0d592f0d7e8" enctype="multipart/form-data" method="POST">
 
-                <label for="name">Full Name</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="name" name="fname">
 
-                <label for="email">Email</label>
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="name" name="lname">
+
+                <label for="email">Email Address</label>
                 <input type="email" class="form-control" id="email" name="email">
+
+                <label for="phone">Phone Number</label>
+                <input type="phone" class="form-control" id="phone" name="phone">
+
+                <label for="company">Company</label>
+                <input type="company" class="form-control" id="company" name="company">
+
+                <label for="job">Job Title</label>
+                <input type="job" class="form-control" id="job" name="job">
 
                 <label for="subject">Subject</label>
                 <input type="text" class="form-control" id="subject" name="subject">
 
-                <label for="message">Message</label>
+                <label for="message">Describe Your Project</label>
                 <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+                <p>A brief description of your project. If possible, include what you'd like to scrape, from where, and how often. Please include two time slots as well so we can schedule an initial call.</p>
                 <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
                 <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Submit Form">
             </form>
