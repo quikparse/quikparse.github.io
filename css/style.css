@@ -426,9 +426,11 @@ a:hover, a:focus, a:active {
   }
 }
 
+
 .probootstrap-hero .probootstrap-hero-text {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 200px;
+  margin-bottom:80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -463,12 +465,11 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-hero h1 {
-  text-transform: uppercase;
   font-size: 52px;
   color: #181920;
   font-weight: 700;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 20px;
   line-height: 64px;
 }
 
@@ -1317,7 +1318,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-flex .probootstrap-flex-item {
-  width: 30%;
+  width: 33%;
   padding: 40px;
   -webkit-transition: .3s all;
   transition: .3s all;
@@ -1326,7 +1327,6 @@ a:hover, a:focus, a:active {
   z-index: 1;
   position: relative;
   border-radius: 4px;
-  margin:0px 10px 0px 10px
 }
 
 @media screen and (max-width: 768px) {
@@ -1493,6 +1493,14 @@ a:hover, a:focus, a:active {
   font-weight: bold;
 }
 
+/* General Carousel */
+
+.carousel {
+    -webkit-transition: 20s all;
+    transition: 20s all;
+}
+
+
 /* Owl Override Style */
 .owl-carousel {
   margin-bottom: 100px;
@@ -1517,8 +1525,8 @@ a:hover, a:focus, a:active {
   margin-top: -39px;
   z-index: 9999;
   position: absolute;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 .owl-carousel-posts .owl-controls .owl-nav .owl-next,
