@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quikparse | About Us</title>
+    <title>Quikparse | Case Studies</title>
     <meta name="description" content="Quikparse |  Web Scraping Solutions">
     <meta name="keywords" content="web scraping, web crawling, data aggregation, competitive intelligence">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles-merged.css">
-    <script src="js/d3.min.js"></script>
-    <script src="js/topjson.js"></script>
-    <script src="js/datamaps.world.min.js"></script>
+    
+    
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
     
     <!-- Fixed navbar -->
     <!-- navbar-fixed-top  -->
@@ -39,7 +38,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Product</a></li>
-            <li class="dropdown">
+            <li><a href="solutions.html">Solutions</a></li>
+            <!--<li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Solutions</a>
               <ul class="dropdown-menu">
                   <li><a href="retail.html"><span>Content Aggregation</span></a></li>
@@ -52,9 +52,9 @@
                     <li><a href="#">Marketing</a></li>
                     <li><a href="#">Risk Management</a></li>
                   </ul>
-                  -->
+                  
               </ul>
-            </li>
+            </li>-->
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
             <!--<li class="probootstra-cta-button"><a href="#" class="btn" data-toggle="modal" data-target="#loginModal">Log in</a></li>
@@ -70,7 +70,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 text-left probootstrap-hero-text">
-            <h1 class="probootstrap-animate">Meet The Team</h1>
+            <h1 class="probootstrap-animate">Case Studies</h1>
             <p class="probootstrap-animate"></p>
           </div>
         </div>
@@ -78,101 +78,152 @@
     </section>
 
     <section class="probootstrap-section probootstrap-bg-white">
-      <div class="container">
+     <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 section-heading">
-            <h2 class="probootstrap-animate">Our Mission</h2>
-            <p class="probootstrap-animate"></p>
-          </div>
-        </div>
+            <!--<h2 class="text-center"><span>Bootstrap 4 Accordian</span>Created with <i class="fa fa-heart"></i> from Grafreez</h2>-->
+            <div class="col-md-12 offset-md-0">
+                <div class="bd-example" data-example-id="">
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <i class="icon-home" aria-hidden="true"></i>
+            <h3>Lead generation for real estate corporation</h3>
+            <p>Creation of real estate agent mailing database across US and Canada</p>
+        </a>
       </div>
+    </div>
+
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
+      <div class="card-block">
+        <h2>Client</h2>
+        <p>Real estate construction company based out of USA</p>
+        <h2>Requirement</h2>
+        <p>Client was looking for creating a database of real estate mailing lists for locating sales prospects in US/Canada and capturing highly targeted leads</p>
+        <h2>Challenge</h2>
+        <p>The client wanted to build a database of realtors and real estate agents in US and Canada who were listed on various real estate franchises. The challenge was to collect more than 1 million records comprising real estate agent profile information ensuring low turnaround time, minimal duplicity and highest fill rate of contact information. This had to be done by gathering data from 8 websites (each having a different structure) with some websites requiring user to specifically search before listing the agents. The critical part of developing the database was to compare and identify the same agent across multiple websites and triangulate contact information. </p>
+        <h2>Websites</h2>
+        <p>REMAX(US &amp; Canada), Corcoran, Royal lepage, Sotheby’s Realty, BHGRE, Century 21, Keller Williams, ERA Real Estate</p>
+        <h2>Solution</h2>
+        <p>The key contact fields for the agents were identified across the websites including
+Agency Name, Contact Name, Email, Address, City, State, Zip, Phone, Fax, Website, Specialization, Languages Known, Properties Price Range, Agent/Agency Summary, Listed from
+8 data crawlers were setup for mass crawling that could collect the information related to the above fields in a structured format. The websites were crawled parallel to each other and 1M agent records were collect in a span of 1 week. These records were subsequently treated for duplication using agency and contact details and the final dataset was made available via an API. 
+</p>
+        <h2>Key Achievements</h2>
+        <p><ul>
+        <li>All crawlers ran smoothly without any user involvement. </li>
+<li>More than 500k records were uploaded ensuring 100% fill rate for email &amp; name, 50% fill rate for phone/fax numbers and 10% fill rate for agent website.</li>
+<li>Dynamic websites like Concoran (AJAX based loading of search results) and BHGRE, Royallepage (required search for getting agent listings) were crawled successfully.</li>
+<li>License/Joining information was included within ‘About Me’ section which required textual analysis to capture.</li>
+<li>Agents were associated with multiple agencies across different time periods which was identified and such agent records were grouped.</li>
+</ul>
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <i class="icon-cart" aria-hidden="true"></i>
+            <h3>Ecommerce product price comparison</h3>
+            <p>Price Monitoring for Home Appliances and Electronics products</p>
+        </a>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+      <div class="card-block">
+               <h2>Client</h2>
+        <p>Home electronics price-aggregator startup</p>
+        <h2>Requirement</h2>
+        <p>Collection of selling price data for electronics and appliance categories from major US ecommerce websites and collation of prices in a cloud-hosted database</p>
+        <h2>Challenge</h2>
+        <p>The client was looking for a data partner to collate consumer electronics and home appliances price data from multiple US retailers so that their analytics team could develop interesting analytics around price comparison for consumers. The existing data extraction prcess was unstructured with prices being gathered manually using browser based scraping tools from various sources. This led to high efforts and data inconsistency issues with the scraping tool being unable to ensure consistent record count and missing out on key high selling models. Even with the manual effort, structuring of the data in order to import it into their database was a challenge. Client was in need of clean data that could be uploaded into the database directly and utilized for creating a price comparison and offer tool.  </p>
+        <h2>Websites</h2>
+        <p>Kohls, Staples, Office Depot, Bestbuy, BJs, Costco, Amazon, Dell, Target</p>
+        <h2>Solution</h2>
+        <p>The client provided the list of source websites to be crawled. The data had to be extracted on a daily basis meaning fresh information had to be supplied every day. Our team set up the crawlers to fetch data points from the sources and crawl all fields including model, manufacturer, SKU, price, store, date, UPC, EAN and description. Since every website in the source list had a different structure and design, site specific customized crawlers were developed. Post completion of crawler development, the results of first crawl were shared with the client and once we received approval on data format and fill-rate, the crawlers started uploading data daily to the database ensuring consistent record count. Each crawled record was automatically mapped against other records based on the UPC data. We were delivering about 200k records on a daily basis. 
+</p>
+        <h2>Key Achievements</h2>
+        <p><ul>
+        <li>•	The client didn’t have to deal with any of the technical aspects in the process</li>
+<li>The setup was completed in just 1 month and the data flow was consistent during the data delivery period</li>
+<li>We setup a robust monitoring system to make sure that no data was missed and ensure zero duplicity</li>
+<li>Some websites were complicated having dynamic result generation or rate limiting measures in place. These cases were effortlessly handled by our tech stack using methods like proxy rotation and user behavior replication</li>
+<li>We deliver 4X record count crawling 3 times the number of websites in 1/4th of cost incurred through earlier method</li>
+<li>Low turnaround time of data improved the ability to market client’s services and capabilities</li>
+<li>Higher data quality levels led to improved product portfolio and competitive offers being given to the customers</li>
+<li>In case any data inconsistency issues were found, they were rectified within 2-3 hours post client notifying us the same. </li>
+</ul>  
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+          <i class="icon-briefcase" aria-hidden="true"></i>
+            <h3>Scraping Job Listings</h3>
+            <p>Extracting large-scale job data from popular job portals</p>
+        </a>
+      </div>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+      <div class="card-block">
+               <h2>Client</h2>
+        <p>Popular Job portal in India</p>
+        <h2>Requirement</h2>
+        <p>The client wanted job listings to be extracted from leading job sites like Monster Jobs, Indeed and Naukri.com. The data points that the client needed were Job postings including job titles, location, wages, company profiles, Job descriptions and candidate resumes. </p>
+        <h2>Solution</h2>
+        <p>The list of source websites and the data points were provided by the client. They wanted this data to be extracted on a daily basis, which means fresh data had to be provided every day. We set up crawlers to extract the required data fields from the list of websites provided by the client. This requirement comes under the site specific crawl offering of ours since the crawlers have to be setup specifically for each site in the list. The client wanted the data in CSV format and be uploaded to their Dropbox account. Once the initial setup was done, our crawlers started delivering the data which was directly fed into the client’s Dropbox. We delivered close to 2 million job listings during the first crawl and about 200K records of clean and structured data on a daily basis thereafter. 
+</p>
+        <h2>Key Achievements</h2>
+        <p><ul>
+        <li>The complex technical aspects of data extraction were taken care of by us</li>
+<li>It took only a few days for the initial setup after which data started flowing consistently</li>
+<li>Our advanced tech stack handled huge amounts of data effortlessly</li>
+<li>The client was able to enrich their job portal with an enormous number of listings within a short period of time</li>
+</ul>  
+</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+            </div>
+        </div>
+</div>
+</div>
     </section>
 
-    <section class="probootstrap-section">
+    <!--<section class="probootstrap-section">
       <div class="container">
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
+            <a href="#" class="probootstrap-team">
+              <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
+              <div class="probootstrap-team-info">
+                <h3>Jeremy Slater <span class="position">Co-Founder / Tech</span></h3>
+              </div>
+            </a>
+          </div>
+         
+
+          <div class="clearfix visible-sm-block visible-xs-block"></div>
+
+          
+          
+          <div class="clearfix visible-sm-block visible-xs-block"></div>
+
         
-        <!-- END row -->
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Jeremy Slater <span class="position">Co-Founder / Tech</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>James Butterly <span class="position">Co-Founder / Creative</span></h3>
-              </div>
-            </a>
-          </div>
-          
-          <div class="clearfix visible-sm-block visible-xs-block"></div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Matthew Smith <span class="position">Developer</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Ivan Dubovtsev <span class="position">Designer</span></h3>
-                
-              </div>
-            </a>
-          </div>
-
-          <div class="clearfix visible-sm-block visible-xs-block"></div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>James Butterly <span class="position">Co-Founder / Creative</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Jeremy Slater <span class="position">Co-Founder / Tech</span></h3>
-              </div>
-            </a>
-          </div>
-          
-          <div class="clearfix visible-sm-block visible-xs-block"></div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Ivan Dubovtsev <span class="position">Designer</span></h3>
-                
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Matthew Smith <span class="position">Developer</span></h3>
-              </div>
-            </a>
-          </div>
-          
 
         </div>
       </div>
-    </section>
+    </section>-->
   
     <section class="probootstrap-cta">
       <div class="container">
@@ -354,8 +405,6 @@
 
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
-    <script>
-    var map = new Datamap({element: document.getElementById('map-container')});
-    </script>
+
   </body>
 </html>
