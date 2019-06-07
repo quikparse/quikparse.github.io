@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Inspire &mdash; Free Bootstrap Theme, Free Website Template</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <title>Quikparse | About</title>
+    <meta name="description" content="Quikparse |  Web Scraping Solutions">
+    <meta name="keywords" content="web scraping, web crawling, data aggregation, competitive intelligence">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
     <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/d3.min.js"></script>
+    <script src="js/topjson.js"></script>
+    <script src="js/datamaps.world.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -21,7 +24,7 @@
     <!-- Fixed navbar -->
     <!-- navbar-fixed-top  -->
     
-    <nav class="navbar navbar-default probootstrap-navbar">
+    <nav class="navbar probootstrap-megamenu navbar-default probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -30,33 +33,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" title="uiCookies:Inspire">Inspire</a>
+          <a class="navbar-brand" href="index.html" title="quikparse">quikparse</a>
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
             <li class="dropdown">
-              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
-              <ul class="dropdown-menu dropdown">
-                <li class="active"><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li class="dropdown-submenu dropdown">
-                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
-                    <li><a href="#">Second Level Menu</a></li>
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Solutions</a>
+              <ul class="dropdown-menu">
+                  <li><a href="retail.html"><span>Content Aggregation</span></a></li>
+                  <li><a href="marketing.html"><span>Competitive Intelligence</span></a></li>
+                  <li><a href="recruitment.html"><span>Market Research</span></a></li>
+                  <li><a href="realestate.html"><span>Customer Insight</span></a></li>
+                  <!--<ul class="dropdown-menu">
+                    <li><a href="#">Consumer</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Risk Management</a></li>
                   </ul>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                  -->
               </ul>
             </li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li class="probootstra-cta-button"><a href="#" class="btn" data-toggle="modal" data-target="#loginModal">Log in</a></li>
+            <!--<li class="probootstra-cta-button"><a href="#" class="btn" data-toggle="modal" data-target="#loginModal">Log in</a></li>
             <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#signupModal">Sign up</a></li>
+            -->
           </ul>
         </div>
       </div>
@@ -66,8 +70,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 text-left probootstrap-hero-text probootstrap-animate" data-animate-effect="fadeIn">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                        <h1>Our Mission</h1>
+            <p>Our mission is to democratise access to big data solutions
+for businesses across the globe via vertical-agnostic approach and
+foster a data-driven growth culture.</p>
           </div>
         </div>
       </div>
@@ -76,22 +82,73 @@
     <section class="probootstrap-section probootstrap-bg-white">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3 section-heading probootstrap-animate">
-            <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique recusandae rerum architecto fugiat fugit tenetur temporibus neque possimus cumque quasi! Omnis quia ullam ipsum voluptatem quis veniam excepturi explicabo inventore itaque culpa consectetur vel officiis expedita voluptatum et asperiores Inventore ut unde est doloribus incidunt amet. Hic expedita earum.</p>
+          <div class="col-md-10 col-md-offset-1 section-heading probootstrap-animate">
+          <h2>About Us</h2>
+            <p>Founded in 2016, Quikparse is a pioneer and global leader in Data-as-a-Service solutions. The integral part of our work is web data extraction using cloud computing technologies focused at helping enterprises acquire large scale structured data from the web. 
+Currently our big data solutions are enabling some of the biggest names from a range of domains including travel, finance, health-care, marketing, analytics and more.</p>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center probootstrap-animate" data-animate-effect="fadeIn">
-            <img src="img/hero_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
+          <div class="col-md-10 col-md-offset-1 text-center probootstrap-animate" data-animate-effect="fadeIn">
+          <h2>Companies across the globe trust Quikparse with their data needs</h2>
+            <div id="map-container" style="position: relative; height:700px"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="probootstrap-flex-section">
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 section-heading probootstrap-animate">
+            <h2>Meet the Team</h2>
+            <p class="lead">Meet the people helping you access the world's information for better decision-making.</p>
+            <p></p>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md-2 col-sm-4 col-xs-4 probootstrap-animate">
+            <a href="#" class="probootstrap-team">
+              <img src="img/ceo.png" alt="CEO &amp; Co-Founder" class="img-responsive img-rounded">
+              <div class="probootstrap-team-info">
+                <h3>Deepika Singh<span class="position">Co-Founder &amp; CEO</span></h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 probootstrap-animate">
+            <a href="#" class="probootstrap-team">
+              <img src="img/cto.png" alt="Co-Founder &amp; CTO" class="img-responsive img-rounded">
+              <div class="probootstrap-team-info">
+                <h3>Utkarsh<span class="position">Co-Founder &amp; CTO</span></h3>
+              </div>
+            </a>
+          </div>
+          <div class="clearfix visible-sm-block visible-xs-block"></div>
+          <div class="col-md-2 col-sm-4 col-xs-4 probootstrap-animate">
+            <a href="#" class="probootstrap-team">
+              <img src="img/sales.png" alt="Sales Lead" class="img-responsive img-rounded">
+              <div class="probootstrap-team-info">
+                <h3>Rajat Sharma <span class="position">Sales Lead</span></h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-4 probootstrap-animate">
+            <a href="#" class="probootstrap-team">
+              <img src="img/client_lead.png" alt="Client Engagement Lead" class="img-responsive img-rounded">
+              <div class="probootstrap-team-info">
+                <h3>Devender Chhillar<span class="position">Client Engagement Lead</span></h3>
+                
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="probootstrap-flex-section">
       <div class="container">
         <div class="probootstrap-flex">
           <div class="probootstrap-flex-item active probootstrap-animate" data-animate-effect="fadeIn">
@@ -158,56 +215,9 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
-    <section class="probootstrap-section probootstrap-bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 section-heading probootstrap-animate">
-            <h2>Meet The Team</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Jeremy Slater <span class="position">Co-Founder / Tech</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>James Butterly <span class="position">Co-Founder / Creative</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="clearfix visible-sm-block visible-xs-block"></div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Matthew Smith <span class="position">Developer</span></h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 probootstrap-animate">
-            <a href="#" class="probootstrap-team">
-              <img src="img/person_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded">
-              <div class="probootstrap-team-info">
-                <h3>Ivan Dubovtsev <span class="position">Designer</span></h3>
-                
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
   
     <section class="probootstrap-cta">
       <div class="container">
@@ -219,44 +229,38 @@
         </div>
       </div>
     </section>
-    <footer class="probootstrap-footer">
+        <footer class="probootstrap-footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-4 probootstrap-animate">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>About Quikparse</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="tos.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="location.html">Office Location</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-4 probootstrap-animate">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>Support</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="customers.html">Case Studies</a></li>
+                    <li><a href="faq.html">Web Scraping FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-4 probootstrap-animate">
                 <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
+                  <h3>Resources</h3>
                   <ul>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="datasets.html">Sample Datasets</a></li>
                   </ul>
                 </div>
               </div>
@@ -265,8 +269,10 @@
           
           <div class="col-md-6 probootstrap-animate">
             <div class="probootstrap-footer-widget">
-              <h3>Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+              <h3>QUIKPARSE PRIVATE LIMITED</h3>
+              <p> 705, B-9, Sector 58<br/>
+                  Noida, Uttar Pradesh<br/> India - 201301 </p>
+              <!--<h3>STAY UPDATED</h3>
               <ul class="probootstrap-footer-social">
                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                 <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -275,13 +281,14 @@
                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
                 <li><a href="#"><i class="icon-youtube"></i></a></li>
               </ul>
+              -->
             </div>
           </div>
         </div>
         <!-- END row -->
         <div class="row">
-          <div class="col-md-12 copyright probootstrap-animate">
-            <p><small>&copy; 2017 <a href="#">uiCookies:Inspire</a>. All Rights Reserved. <br> Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://uicookies.com/">uicookies.com</a></small></p>
+          <div class="col-md-12 copyright">
+            <p><small>&copy; 2019 <a href="#">Quikparse Private Limited</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/">uicookies.com</a></small></p>
           </div>
         </div>
       </div>
@@ -389,6 +396,34 @@
 
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
+    <script>
+      var basic_choropleth = new Datamap({
+  element: document.getElementById("map-container"),
+  projection: 'mercator',
+  fills: {
+    defaultFill: "#7ed321",
+    authorHasTraveledTo: "#29A430",
+  },
+  geographyConfig: { highlightFillColor: '#8b8e94',popupOnHover: false,
+    highlightOnHover: false },
+  data: {
+    USA: { fillKey: "authorHasTraveledTo" },
+    JPN: { fillKey: "authorHasTraveledTo" },
+    ITA: { fillKey: "authorHasTraveledTo" },
+    CRI: { fillKey: "authorHasTraveledTo" },
+    KOR: { fillKey: "authorHasTraveledTo" },
+    DEU: { fillKey: "authorHasTraveledTo" },
+    IND: { fillKey: "authorHasTraveledTo" },
+    BRA: { fillKey: "authorHasTraveledTo" },
+    FRA: { fillKey: "authorHasTraveledTo" },
+    ESP: { fillKey: "authorHasTraveledTo" },
+  },
+
+});
+
+var colors = d3.scale.category10();
+
+    </script>
 
   </body>
 </html>
